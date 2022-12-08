@@ -200,13 +200,13 @@ You can use the `Autosession {delete|search}` command to open a picker using `vi
 
 Command hooks exist in the format: {hook_name}
 
-- {pre_save}: executes *before* a session is saved
-- {save_extra}: execute *after* a session is saved, return string will save to `*x.vim`, reference `:help mks`
-- {post_save}: executes *after* a session is saved
-- {pre_restore}: executs *before* a session is restored
-- {post_restore}: executs *after* a session is restored
-- {pre_delete}: executs *before* a session is deleted
-- {post_delete}: executs after* a session is deleted
+- `pre_save`: executes *before* a session is saved
+- `save_extra`: executes *after* a session is saved, return string will save to `*x.vim`, reference `:help mks`
+- `post_save`: executes *after* a session is saved
+- `pre_restore`: executes *before* a session is restored
+- `post_restore`: executes *after* a session is restored
+- `pre_delete`: executes *before* a session is deleted
+- `post_delete`: executes *after* a session is deleted
 
 Hooks are configured by setting
 
